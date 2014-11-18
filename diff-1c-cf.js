@@ -87,7 +87,7 @@ tempfile.close();
 
 
 var WshShell = new ActiveXObject("WScript.Shell");
-var cmd = '"'+pathTo1C+'" enterprise /F"'+pathToBase+'" /C"diff;'+objScript.GetAbsolutePathName(objScript.BuildPath(tfolder.path, tname))+';" /Execute"'+pathToV8reader+'"' ;
+var cmd = '"'+pathTo1C+'" enterprise /F"'+pathToBase+'" /C"diff;'+objScript.GetAbsolutePathName(objScript.BuildPath(tfolder.path, tname))+';shutdownAfterClose" /Execute"'+pathToV8reader+'"' ;
 WScript.Echo("cmd = " + cmd);
 
 err = WshShell.Run(cmd, 1, true);//2
