@@ -15,5 +15,4 @@ If Exist "%CD%\%1" (
 	cscript.exe %~dp0\diff-1c-cf.js %1 %2 %3
 )
 
-rem 
-pause
+rem pause
