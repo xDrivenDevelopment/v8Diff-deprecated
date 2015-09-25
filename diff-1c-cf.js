@@ -1,7 +1,4 @@
 //Исправь, на правильный путь. 
-//var pathTo1C = "c:\\Program Files (x86)\\1cv82\\8.2.15.319\\bin\\1cv8.exe";
-////var pathToBase = "d:\\WORK\\1C\\diff1c\\basediff";
-//var pathToBase = "d:\\WORK\\repository\\repo\\git\\antbuild\\ibService";
 var pathTo1C = "c:\\Program Files (x86)\\1cv82\\8.2.19.73\\bin\\1cv8.exe";
 
 var FSO = WScript.CreateObject("Scripting.FileSystemObject")
