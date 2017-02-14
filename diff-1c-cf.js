@@ -1,10 +1,13 @@
 //Исправь, на правильный путь. 
-//var pathTo1C = "c:\\Program Files (x86)\\1cv82\\8.2.15.319\\bin\\1cv8.exe";
-////var pathToBase = "d:\\WORK\\1C\\diff1c\\basediff";
-//var pathToBase = "d:\\WORK\\repository\\repo\\git\\antbuild\\ibService";
 var pathTo1C = "c:\\Program Files (x86)\\1cv82\\8.2.19.73\\bin\\1cv8.exe";
-var pathToBase = "C:\\Cmd\\v8Diff\\ibService";
-var pathToV8reader = "C:\\Cmd\\v8Diff\\V8Reader.epf";
+
+var FSO = WScript.CreateObject("Scripting.FileSystemObject")
+var ScriptFile = FSO.GetFile(WScript.ScriptFullName)
+
+ScriptDir = FSO.GetParentFolderName(ScriptFile)
+
+var pathToBase = ScriptDir+"\\ibService"
+var pathToV8reader = ScriptDir+"\\V8Reader.epf"
 
 objArgs = WScript.Arguments;
 num = objArgs.length;
